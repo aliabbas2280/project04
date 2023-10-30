@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./code.jquery.com_jquery-3.7.1.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script>
+
+$(document).ready(function(){
+$('#cmpusy').click(function(){
+$('#linksDo').slideToggle()
+}); 
+});
+
+    </script>
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+        body {
+            background: #ebcc8e;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .nav1 {
+            width: 100%;
+            height: 60px;
+            background-color: #413BCA;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+
+        }
+
+        .p1 {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            padding: 20px;
+            margin-left: 40px;
+        }
+
+        #linksDo{
+            display: none    
+             ;
+        }
+
+
+        .nav2 {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+
+        }
+
+        .para {
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+.links{
+       height: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            margin-right: 60px;
+            margin-top: 20px;
+            font-size: 23px;
+            display: none;
+}
+    
+
+        .links a:hover {
+            color: #413BCA;
+            border-bottom: 4px solid #413BCA;
+
+        }
+
+
+
+        .p2 {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            background-image: url(./orp.png);
+            background-size: cover;
+            overflow:scroll ;
+        }
+
+        .texts {
+            width: 40%;
+            padding-top: 150px;
+            padding-left: 70px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .box1 {
+            height: 80px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            padding: 30px;
+        }
+
+        #img-1:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+
+        }
+
+        #img-2:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+
+        }
+
+        #img-3:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+
+        }
+
+        #img-4:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+
+        }
+    </style>
+    <style>
+        @media (max-width:639px ) {
+#btn{
+    margin-right: 0px;
+}
+#partno1w{
+    display: none;
+}
+.links{
+    display: none;
+}
+
+#cmpusy{
+    display: block;
+}
+#p1long{
+    display: none;
+}
+            
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="nav1">
+        <div class="p1 sm:text-base md:text-base">
+            <p>Gmail : Aliabbas@gmail.com </p>
+            <p id="partno1w">Phone : 03235992280</p>
+        </div>
+        <!-- width: 120px;
+        height: 60px;
+        margin-right: 80px;
+        border: none;
+        background-color: ;
+        color: white; -->
+        <div class="b1 ">
+            <button class="w-[120px] h-[60px] bg-black text-white  sm:ml-12"><a href="./donaten.html">Donate Now </a></button>
+        </div>
+    </div>
+    <div class="nav2">
+        <div class="p2">
+            <div class="logo" style="margin-top: -7px;">
+                <!-- height: 80px;
+                border-radius: 50%; -->
+                <img class="h-[80px] rounded-full" src="./pre0.jpg" alt="">
+            </div>
+            <div class="para">
+                <h1 style="font-weight: 700 ; font-size: 30px; margin-top: -5px;">The<span
+                        style="color: #413BCA;">Charity</span></h1>
+            </div>
+        </div>
+        <div id="linksDD" class="links md:flex "  style="font-size: 20px;">
+            <a href="">Home</a>
+            <a href="./about.html" >About</a>
+            <a href="">Gallery</a>
+            <a href="./sign.html">Sign Up</a>
+        </div>
+        <i id="cmpusy" style="margin-top: 22px; font-size: 30px; "  class="fa-solid fa-bars md:hidden
+        "></i>  
+    </div>
+    <div class="main">
+        <div id="Mytextr" class="">
+            <div id="linksDo" dir="ltr " class=" absolute bg-slate-500  grid grid-cols-1 items-end p-[10px] lg:hidden md:hidden sm:block"  style="font-size: 20px;">
+                <a class="hover:bg-black hover:text-white w-[150px] pl-[130px]" href="">Home</a>
+                <a class="hover:bg-black hover:text-white w-[150px] pl-[130px]" href="./about.html" >About</a>
+                <a class="hover:bg-black hover:text-white w-[150px] pl-[130px]" href="">Gallery</a>
+                <a class="hover:bg-black hover:text-white w-[150px] pl-[130px]" href="./form.html">Sign Up</a>
+            </div>
+
+        </div>
+        <div class="texts">
+            <h1 style="color: rgb(248, 148, 18) ; font-size: 30px; width: 100% ;">Donate for a better <span
+                    style="color: #29247a; font-size:50px ;">world.</span></h1>
+            <p style="color: black; font-size: 20px; padding: 10px     ;"   id="p1long" class="bg-slate-400">"Imagine you have a special power - the power to make the world a better place! When you donate, you use this amazing power to help others. It's like sharing your toys with a friend or giving a warm hug when someone is feeling sad. Your donations can help children who need food, clothes, and toys. They can also help build schools and hospitals, so kids can learn and grow up healthy.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </div>
+
+    </div>
+
+    </div>
+    <section class="text-black-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap w-full mb-20">
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">"Donate Today: Be the Change"</h1>
+                    <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+                </div>
+                <p class="lg:w-1/2 w-full leading-relaxed text-black">Welcome to our donation platform, where generosity meets impact! We believe that together, we can make a significant difference in the lives of those in need. Your support is the key to changing the world, one contribution at a time. Whether you're passionate about education, healthcare, humanitarian aid, or any other cause, our platform is your gateway to making a positive change</p>
+
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="./poor-girl-4216613.jpg"
+                            alt="content" id="img-1">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Why Donate</h2>
+                        <p class="leading-relaxed text-base">Your donations play a crucial role in addressing pressing issues around the world. They empower us to extend a helping hand to communities affected by poverty, disaster, and other challenges.</p>
+
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="./children-60743.jpg" alt="content"
+                            id="img-2">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">How it works</h2>
+                        <p class="leading-relaxed text-base">Your contribution could fund critical medical research, provide clean drinking water to a village, feed the hungry, or enable a child's education. It's not just about giving.</p>
+
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="./poor.png" alt="content"
+                            id="img-3">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Our Impact</h2>
+                        <p class="leading-relaxed text-base">Donating on our platform is simple and secure. Choose the cause you're passionate about, select your preferred donation method, and make a one-time or recurring contribution.</p>
+
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="./child.png" alt="content"
+                            id="img-4">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Donate Today</h2>
+                        <p class="leading-relaxed text-base">We're proud to share the stories of individuals and communities whose lives have been changed through the collective power of giving.Thanks for your support and love for poors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer class="text-white-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                <span class="ml-3 text-xl">Donor's Heart</span>
+            </a>
+            <p class="text-sm text-black sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023
+                Donation —
+                <a href="https://twitter.com/knyttneve" class="text-black ml-1" rel="noopener noreferrer"
+                    target="_blank">Gift of Hope</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-black">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-black">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-black">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-black">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>

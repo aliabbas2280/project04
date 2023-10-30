@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Donation Signup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --primary-color: #ebcc8e;
+            /* Define the primary skin color as a custom property */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--primary-color);
+            /* Use the custom property as the background color */
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container {
+            width: 100px;
+            background: var(--primary-color);
+            /* Use the custom property as the background color */
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+            padding: 50px;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4caf50;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            transition: 0.3s;
+        }
+
+        /* input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="email"]:focus {
+            border: 1px solid #4caf50;
+        } */
+
+        input[type="submit"] {
+            width: 100%;
+            background: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #45a049;
+        }
+
+        .signup {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .signup a {
+            text-decoration: none;
+            color: #413BCA;
+        }
+
+        .signup a:hover {
+            text-decoration: underline;
+        }
+
+        .extra-details {
+            margin-top: 20px;
+        }
+
+        .extra-details label {
+            font-weight: bold;
+        }
+
+        .extra-details input[type="date"],
+        .extra-details input[type="text"],
+        .extra-details input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container ">
+        <h2 style="color: #413BCA;">Donation Signup</h2>
+        <form action="backend.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="extra-details">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <input type="submit" value="Sign Up" style="color: #FFF; font-weight: 400;">
+        </form>
+        <div class="signup">
+            Already have an account? <a href="login.html">Login</a>
+        </div>
+    </div>
+</body>
+
+</html>
